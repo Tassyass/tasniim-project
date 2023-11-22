@@ -1,0 +1,42 @@
+/* Style for the movie container */
+.movie-dispaly {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+/* Style for each movie item */
+ .movie-card{
+  width: calc(33.33% - 20px); /* 20px for margin; adjust the width as needed */
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: 8px;
+  
+}
+
+/* Style for movie images */
+.movie-card img {
+  width: 70%;
+  height: auto;
+  border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+}
+
+/* Style for movie content */
+.movie-content {
+  padding: 10px;
+  
+}
+
+/* Style for movie titles */
+.movie-item h3 {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Optional: Add hover effect */
+.movie-item:hover {
+  transform: scale(1.05);
+}
