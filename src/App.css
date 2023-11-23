@@ -1,44 +1,4 @@
-.movie-dispaly {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  
-}
 
-/* Style for each movie item */
- .movie-card{
-  width: calc(33.33% - 20px); /* 20px for margin; adjust the width as needed */
-  margin: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  overflow: hidden;
-  border-radius: 8px;
-  
-}
-
-/* Style for movie images */
-.movie-card img {
-  width: 70%;
-  height: auto;
-  border-radius: 8px 8px 0 0; /* Rounded corners for the top */
-}
-
-/* Style for movie content */
-.movie-content {
-  padding: 10px;
-  
-}
-
-/* Style for movie titles */
-.movie-item h3 {
-  text-align: center;
-  margin-top: 5px;
-}
-
-/* Optional: Add hover effect */
-.movie-item:hover {
-  transform: scale(1.05);
-}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,6 +7,7 @@
   background-color: #f0f0f0;
   border-bottom:2px solid #2c3e50;
   color: rgb(241, 137, 137);
+  float: right;
 }
 
 .nav-links {
@@ -61,4 +22,41 @@
   font-weight: bold;
   font-size: 25px;
   margin: 0 15px;
+}
+.movie-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Six columns */
+  grid-template-rows: repeat(6, auto); /* Three rows */
+  gap: 20px; /* Gap between movie cards */
+}
+
+.movie-card {
+  /* Styles for each movie item */
+  width: 70%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Ensure consistent height for movie cards within the grid */
+.movie-card img {
+  width: 80%;
+  height: 50%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+body {
+  background-color: aquamarine;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-size: bold;
+}
+.search{
+  width: 150px;
 }

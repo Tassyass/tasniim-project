@@ -13,8 +13,8 @@ const Search = ({ handleSearch }) => {
 
 
   return (
-    <div className="row d-flex align-items-center mt-4 mb-4">
-      <div className="col">
+    <div className="search-bar">
+      <div className="search">
         <input
           type="text"
           className="form-control"

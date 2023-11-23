@@ -45,8 +45,9 @@ function App() {
   function MainApp() {
     return (
       <>
+        <Header />
         <NavBar />
-      <Header />
+      
       <Search handleSearch={handleSearch} />
       <AddToFavourite selectMovie={selectMovie} removeFromFavourite={removeFromFavourite} />
       <MovieList addToFavourite={addToFavourite} searchQuery={searchQuery}/>
