@@ -1,6 +1,7 @@
 
 import './App.css';
-import React, { useState, useEffect } from 'react';
+
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Header from './componets/Header';
 import Search from './componets/Search';
@@ -11,17 +12,12 @@ import LogIn from './componets/LogIn';
 
 function App() {
   const [selectMovie, setSelectMovie] = useState([]);
-  const [filteredMovies, setFilteredMovies] = useState([]);
-  const [movies, setMovies] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
 
-  useEffect(() => {
-    fetch("http://localhost:3000/movies")
-      .then((res) => res.json())
-      .then((movies) => {
-        setMovies(movies);
-        setFilteredMovies(movies);
-      });
-  }, []);
+
+  
+
+
 
   const addToFavourite = (movie) => {
     setSelectMovie([...selectMovie, movie]);
@@ -33,11 +29,9 @@ function App() {
   };
 
   const handleSearch = (query) => {
-    const filtered = movies.filter((movie) =>
-      movie.title.toLowerCase().includes(query.toLowerCase())
-    );
-    setFilteredMovies(filtered);
+    setSearchQuery(query);
   };
+
 
   return (
     <Router>
@@ -55,7 +49,7 @@ function App() {
       <Header />
       <Search handleSearch={handleSearch} />
       <AddToFavourite selectMovie={selectMovie} removeFromFavourite={removeFromFavourite} />
-      <MovieList addToFavourite={addToFavourite} movies={filteredMovies} />
+      <MovieList addToFavourite={addToFavourite} searchQuery={searchQuery}/>
     </>
       
     );

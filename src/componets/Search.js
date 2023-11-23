@@ -1,9 +1,8 @@
 
-import React, { useState } from 'react';
+import { useState } from "react";
 
 const Search = ({ handleSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
-
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
   };
@@ -11,6 +10,7 @@ const Search = ({ handleSearch }) => {
   const handleClick = () => {
     handleSearch(searchTerm);
   };
+
 
   return (
     <div className="row d-flex align-items-center mt-4 mb-4">
@@ -21,6 +21,7 @@ const Search = ({ handleSearch }) => {
           placeholder="Search for a movie..."
           value={searchTerm}
           onChange={handleChange}
+
         />
       </div>
       <div className="col-auto">
