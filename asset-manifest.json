@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f1c4572.css",
-    "main.js": "/static/js/main.56410e63.js",
-    "static/js/787.73299d29.chunk.js": "/static/js/787.73299d29.chunk.js",
-    "index.html": "/index.html",
-    "main.6f1c4572.css.map": "/static/css/main.6f1c4572.css.map",
-    "main.56410e63.js.map": "/static/js/main.56410e63.js.map",
-    "787.73299d29.chunk.js.map": "/static/js/787.73299d29.chunk.js.map"
+    "main.css": "/phase-project/static/css/main.3793bdf3.css",
+    "main.js": "/phase-project/static/js/main.57e0ad88.js",
+    "static/js/787.73299d29.chunk.js": "/phase-project/static/js/787.73299d29.chunk.js",
+    "index.html": "/phase-project/index.html",
+    "main.3793bdf3.css.map": "/phase-project/static/css/main.3793bdf3.css.map",
+    "main.57e0ad88.js.map": "/phase-project/static/js/main.57e0ad88.js.map",
+    "787.73299d29.chunk.js.map": "/phase-project/static/js/787.73299d29.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f1c4572.css",
-    "static/js/main.56410e63.js"
+    "static/css/main.3793bdf3.css",
+    "static/js/main.57e0ad88.js"
   ]
 }
